@@ -1,0 +1,699 @@
+{
+  "vocabulary": [
+    {
+      "word": "わたし",
+      "romaji": "watashi",
+      "meaning": "би"
+    },
+    {
+      "word": "わたしたち",
+      "romaji": "watashitachi",
+      "meaning": "бид нар"
+    },
+    {
+      "word": "あなた",
+      "romaji": "anata",
+      "meaning": "чи, та"
+    },
+    {
+      "word": "あのひと",
+      "romaji": "ano hito",
+      "meaning": "тэр хүн"
+    },
+    {
+      "word": "あのかた",
+      "romaji": "ano kata",
+      "meaning": "тэр хүн (хүндэтгэлийн хэллэг)"
+    },
+    {
+      "word": "みなさん",
+      "romaji": "minasan",
+      "meaning": "та бүхэн"
+    },
+    {
+      "word": "～さん",
+      "romaji": "~san",
+      "meaning": "— гуай"
+    },
+    {
+      "word": "～ちゃん",
+      "romaji": "~chan",
+      "meaning": "— хүүхэд, дотно эмэгтэй"
+    },
+    {
+      "word": "～くん",
+      "romaji": "~kun",
+      "meaning": "хүний нэрний ард, өөртэйгөө адил зиндаа эсвэл доош эрэгтэй"
+    },
+    {
+      "word": "～じん",
+      "romaji": "~jin",
+      "meaning": "“үндэстэн” + хүн"
+    },
+    {
+      "word": "せんせい",
+      "romaji": "sensei",
+      "meaning": "багш, эмч, улс төрч"
+    },
+    {
+      "word": "きょうし",
+      "romaji": "kyoushi",
+      "meaning": "багш (ажил мэргэжил)"
+    },
+    {
+      "word": "がくせい",
+      "romaji": "gakusei",
+      "meaning": "оюутан"
+    },
+    {
+      "word": "かいしゃいん",
+      "romaji": "kaishain",
+      "meaning": "компанийн ажилтан"
+    },
+    {
+      "word": "しゃいん",
+      "romaji": "shain",
+      "meaning": "компанийн ажилтан (ж:нь IMC компанийн ажилтан)"
+    },
+    {
+      "word": "ぎんこういん",
+      "romaji": "ginkouin",
+      "meaning": "банкны ажилтан"
+    },
+    {
+      "word": "いしゃ",
+      "romaji": "isha",
+      "meaning": "эмч"
+    },
+    {
+      "word": "けんきゅうしゃ",
+      "romaji": "kenkyuusha",
+      "meaning": "судлаач"
+    },
+    {
+      "word": "エンジニア",
+      "romaji": "enjinia",
+      "meaning": "инженер"
+    },
+    {
+      "word": "だいがく",
+      "romaji": "daigaku",
+      "meaning": "их, дээд сургууль"
+    },
+    {
+      "word": "びょういん",
+      "romaji": "byouin",
+      "meaning": "эмнэлэг"
+    },
+    {
+      "word": "でんき",
+      "romaji": "denki",
+      "meaning": "цахилгаан, гэрэл"
+    },
+    {
+      "word": "だれ",
+      "romaji": "dare",
+      "meaning": "хэн"
+    },
+    {
+      "word": "どなた",
+      "romaji": "donata",
+      "meaning": "хэн (хүндэтгэлийн хэллэг)"
+    },
+    {
+      "word": "～さい",
+      "romaji": "~sai",
+      "meaning": "— нас"
+    },
+    {
+      "word": "なんさい",
+      "romaji": "nansai",
+      "meaning": "хэдэн нас"
+    },
+    {
+      "word": "おいくつ",
+      "romaji": "oikutsu",
+      "meaning": "хэдэн нас (хүндэтгэлийн хэлбэр)"
+    },
+    {
+      "word": "はい",
+      "romaji": "hai",
+      "meaning": "тийм"
+    },
+    {
+      "word": "いいえ",
+      "romaji": "iie",
+      "meaning": "үгүй"
+    },
+    {
+      "word": "しつれいですが",
+      "romaji": "shitsurei desu ga",
+      "meaning": "уучлаарай (асуулт асуухад)"
+    },
+    {
+      "word": "おなまえは？",
+      "romaji": "onamae wa?",
+      "meaning": "таны нэр хэн бэ?"
+    },
+    {
+      "word": "はじめまして",
+      "romaji": "hajimemashite",
+      "meaning": "танилцъя"
+    },
+    {
+      "word": "どうぞよろしく おねがいします",
+      "romaji": "douzo yoroshiku onegaishimasu",
+      "meaning": "танилцсандаа таатай байна"
+    },
+    {
+      "word": "こちらは～さんです",
+      "romaji": "kochira wa ~san desu",
+      "meaning": "энэ хүн бол — гуай"
+    },
+    {
+      "word": "～からきました",
+      "romaji": "~kara kimashita",
+      "meaning": "— аас ирсэн"
+    },
+    {
+      "word": "アメリカ",
+      "romaji": "Amerika",
+      "meaning": "Америк"
+    },
+    {
+      "word": "イギリス",
+      "romaji": "Igirisu",
+      "meaning": "Англи"
+    },
+    {
+      "word": "インド",
+      "romaji": "Indo",
+      "meaning": "Энэтхэг"
+    },
+    {
+      "word": "インドネシア",
+      "romaji": "Indoneshia",
+      "meaning": "Индонез"
+    },
+    {
+      "word": "かんこく",
+      "romaji": "Kankoku",
+      "meaning": "Өмнөд Солонгос"
+    },
+    {
+      "word": "タイ",
+      "romaji": "Tai",
+      "meaning": "Тайланд"
+    },
+    {
+      "word": "ちゅうごく",
+      "romaji": "Chuugoku",
+      "meaning": "Хятад"
+    },
+    {
+      "word": "ドイツ",
+      "romaji": "Doitsu",
+      "meaning": "Герман"
+    },
+    {
+      "word": "にほん",
+      "romaji": "Nihon",
+      "meaning": "Япон"
+    },
+    {
+      "word": "フランス",
+      "romaji": "Furansu",
+      "meaning": "Франц"
+    },
+    {
+      "word": "ブラジル",
+      "romaji": "Burajiru",
+      "meaning": "Бразил"
+    },
+    {
+      "word": "これ",
+      "romaji": "kore",
+      "meaning": "энэ"
+    },
+    {
+      "word": "それ",
+      "romaji": "sore",
+      "meaning": "наадах чинь"
+    },
+    {
+      "word": "あれ",
+      "romaji": "are",
+      "meaning": "тэр"
+    },
+    {
+      "word": "この～",
+      "romaji": "kono~",
+      "meaning": "энэ + нэр үг"
+    },
+    {
+      "word": "その～",
+      "romaji": "sono~",
+      "meaning": "наад + нэр үг"
+    },
+    {
+      "word": "あの～",
+      "romaji": "ano~",
+      "meaning": "тэр + нэр үг"
+    },
+    {
+      "word": "ほん",
+      "romaji": "hon",
+      "meaning": "ном"
+    },
+    {
+      "word": "じしょ",
+      "romaji": "jisho",
+      "meaning": "толь бичиг"
+    },
+    {
+      "word": "ざっし",
+      "romaji": "zasshi",
+      "meaning": "сэтгүүл"
+    },
+    {
+      "word": "しんぶん",
+      "romaji": "shinbun",
+      "meaning": "сонин"
+    },
+    {
+      "word": "ノート",
+      "romaji": "nōto",
+      "meaning": "дэвтэр, notebook"
+    },
+    {
+      "word": "てちょう",
+      "romaji": "techō",
+      "meaning": "тэмдэглэлийн дэвтэр"
+    },
+    {
+      "word": "めいし",
+      "romaji": "meishi",
+      "meaning": "нэрийн хуудас"
+    },
+    {
+      "word": "カード",
+      "romaji": "kādo",
+      "meaning": "карт, card"
+    },
+    {
+      "word": "テレホンカード",
+      "romaji": "terehonkādo",
+      "meaning": "утасны карт, telephone card"
+    },
+    {
+      "word": "えんぴつ",
+      "romaji": "enpitsu",
+      "meaning": "харандаа"
+    },
+    {
+      "word": "ボールペン",
+      "romaji": "bōrupen",
+      "meaning": "тосон бал, ballpoint pen"
+    },
+    {
+      "word": "シャープペンシル",
+      "romaji": "shāpupenshiru",
+      "meaning": "0.5 ын харандаа, mechanical pencil"
+    },
+    {
+      "word": "かぎ",
+      "romaji": "kagi",
+      "meaning": "түлхүүр"
+    },
+    {
+      "word": "とけい",
+      "romaji": "tokei",
+      "meaning": "цаг"
+    },
+    {
+      "word": "かさ",
+      "romaji": "kasa",
+      "meaning": "шүхэр"
+    },
+    {
+      "word": "かばん",
+      "romaji": "kaban",
+      "meaning": "цүнх"
+    },
+    {
+      "word": "(カセット)テープ",
+      "romaji": "(kasetto)tēpu",
+      "meaning": "кассет, хуурцаг, cassette tape"
+    },
+    {
+      "word": "テープレコーダー",
+      "romaji": "tēpurekōdā",
+      "meaning": "магнитофон, tape recorder"
+    },
+    {
+      "word": "テレビ",
+      "romaji": "terebi",
+      "meaning": "телевизор, зураг, television"
+    },
+    {
+      "word": "ラジオ",
+      "romaji": "rajio",
+      "meaning": "радио, radio"
+    },
+    {
+      "word": "カメラ",
+      "romaji": "kamera",
+      "meaning": "зургийн аппарат, camera"
+    },
+    {
+      "word": "コンピューター",
+      "romaji": "konpyūtā",
+      "meaning": "компьютер, computer"
+    },
+    {
+      "word": "じどうしゃ",
+      "romaji": "jidōsha",
+      "meaning": "машин"
+    },
+    {
+      "word": "つくえ",
+      "romaji": "tsukue",
+      "meaning": "б bichgiin shiree"
+    },
+    {
+      "word": "いす",
+      "romaji": "isu",
+      "meaning": "сандал"
+    },
+    {
+      "word": "チョコレート",
+      "romaji": "chokorēto",
+      "meaning": "шоколад, chocolate"
+    },
+    {
+      "word": "コーヒー",
+      "romaji": "kōhī",
+      "meaning": "кофе, coffee"
+    },
+    {
+      "word": "えいご",
+      "romaji": "eigo",
+      "meaning": "англи хэл"
+    },
+    {
+      "word": "にほんご",
+      "romaji": "nihongo",
+      "meaning": "япон хэл"
+    },
+    {
+      "word": "～ご",
+      "romaji": "~go",
+      "meaning": "~~ хэл"
+    },
+    {
+      "word": "なん",
+      "romaji": "nan",
+      "meaning": "юу, хэд, ямар"
+    },
+    {
+      "word": "そう",
+      "romaji": "sō",
+      "meaning": "тийм"
+    },
+    {
+      "word": "ちがいます。",
+      "romaji": "chigaimasu",
+      "meaning": "биш, андуурч байна"
+    },
+    {
+      "word": "そうですか。",
+      "romaji": "sōdesuka",
+      "meaning": "тийм үү"
+    },
+    {
+      "word": "あのう",
+      "romaji": "anō",
+      "meaning": "(хүний анхаарлыг татахдаа хэлдэг үг)"
+    },
+    {
+      "word": "ほんのきもちです。",
+      "romaji": "honno kimochi desu",
+      "meaning": "жаахан юм (бэлэг өгөх үед)"
+    },
+    {
+      "word": "どうぞ。",
+      "romaji": "dōzo",
+      "meaning": "тэг тэг, май"
+    },
+    {
+      "word": "どうも。",
+      "romaji": "dōmo",
+      "meaning": "за (баярлалаа)"
+    },
+    {
+      "word": "これからおせわになります。",
+      "romaji": "korekara osewa ni narimasu",
+      "meaning": "үнээс хойш тусалж дэмжээрэй"
+    },
+    {
+      "word": "(どうも)ありがとうございます。",
+      "romaji": "(dōmo) arigatō gozaimasu",
+      "meaning": "(их) баярлалаа"
+    },
+    {
+      "word": "ありがとう(ございます)。",
+      "romaji": "arigatō (gozaimasu)",
+      "meaning": "баярлалаа"
+    },
+    {
+      "word": "こちらこそよろしく。",
+      "romaji": "kochira koso yoroshiku",
+      "meaning": "би ч мөн танилцсандаа таатай байна"
+    },
+    {
+      "word": "ここ",
+      "romaji": "koko",
+      "meaning": "энэ газар"
+    },
+    {
+      "word": "そこ",
+      "romaji": "soko",
+      "meaning": "наад газар"
+    },
+    {
+      "word": "あそこ",
+      "romaji": "asoko",
+      "meaning": "тэр газар"
+    },
+    {
+      "word": "どこ",
+      "romaji": "doko",
+      "meaning": "хаана"
+    },
+    {
+      "word": "こちら",
+      "romaji": "kochira",
+      "meaning": "ийшээ"
+    },
+    {
+      "word": "そちら",
+      "romaji": "sochira",
+      "meaning": "наад руу чинь"
+    },
+    {
+      "word": "あちら",
+      "romaji": "achira",
+      "meaning": "тийшээ"
+    },
+    {
+      "word": "どちら",
+      "romaji": "dochira",
+      "meaning": "хаашаа"
+    },
+    {
+      "word": "きょうしつ",
+      "romaji": "kyōshitsu",
+      "meaning": "анги, танхим"
+    },
+    {
+      "word": "しょくどう",
+      "romaji": "shokudō",
+      "meaning": "гуанз"
+    },
+    {
+      "word": "じむしょ",
+      "romaji": "jimusho",
+      "meaning": "ажлын өрөө, контор"
+    },
+    {
+      "word": "かいぎしつ",
+      "romaji": "kaigishitsu",
+      "meaning": "хурлын танхим"
+    },
+    {
+      "word": "うけつけ",
+      "romaji": "uketsuke",
+      "meaning": "лавлах, ресепшн"
+    },
+    {
+      "word": "ロビー",
+      "romaji": "robī",
+      "meaning": "хүлээлгийн танхим, lobby"
+    },
+    {
+      "word": "へや",
+      "romaji": "heya",
+      "meaning": "өрөө"
+    },
+    {
+      "word": "トイレ",
+      "romaji": "toire",
+      "meaning": "бие засах газар, toilet"
+    },
+    {
+      "word": "おてあらい",
+      "romaji": "otearai",
+      "meaning": "бие засах газар, угаалгын өрөө"
+    },
+    {
+      "word": "かいだん",
+      "romaji": "kaidan",
+      "meaning": "шат"
+    },
+    {
+      "word": "エレベーター",
+      "romaji": "erebētā",
+      "meaning": "цахилгаан шат, elevator"
+    },
+    {
+      "word": "エスカレーター",
+      "romaji": "esukarētā",
+      "meaning": "урсдаг шат, escalator"
+    },
+    {
+      "word": "くに",
+      "romaji": "kuni",
+      "meaning": "улс, улс орон, нутаг"
+    },
+    {
+      "word": "おくに",
+      "romaji": "okuni",
+      "meaning": "танай улс"
+    },
+    {
+      "word": "かいしゃ",
+      "romaji": "kaisha",
+      "meaning": "компани"
+    },
+    {
+      "word": "うち",
+      "romaji": "uchi",
+      "meaning": "гэр"
+    },
+    {
+      "word": "でんわ",
+      "romaji": "denwa",
+      "meaning": "телефон утас"
+    },
+    {
+      "word": "くつ",
+      "romaji": "kutsu",
+      "meaning": "гутал"
+    },
+    {
+      "word": "ネクタイ",
+      "romaji": "nekutai",
+      "meaning": "зангиа, necktie"
+    },
+    {
+      "word": "ワイン",
+      "romaji": "wain",
+      "meaning": "вино, wine"
+    },
+    {
+      "word": "たばこ",
+      "romaji": "tabako",
+      "meaning": "тамхи"
+    },
+    {
+      "word": "うりば",
+      "romaji": "uriba",
+      "meaning": "тасаг"
+    },
+    {
+      "word": "ちか",
+      "romaji": "chika",
+      "meaning": "газар доор"
+    },
+    {
+      "word": "～かい(～がい)",
+      "romaji": "~kai/~gai",
+      "meaning": "~ давхар"
+    },
+    {
+      "word": "なんがい",
+      "romaji": "nangai",
+      "meaning": "хэдэн давхар"
+    },
+    {
+      "word": "～えん",
+      "romaji": "~en",
+      "meaning": "~ японы мөнгөн тэмдэгт 'иен'"
+    },
+    {
+      "word": "いくら",
+      "romaji": "ikura",
+      "meaning": "ямар үнэтэй"
+    },
+    {
+      "word": "ひゃく",
+      "romaji": "hyaku",
+      "meaning": "100"
+    },
+    {
+      "word": "せん",
+      "romaji": "sen",
+      "meaning": "1,000"
+    },
+    {
+      "word": "まん",
+      "romaji": "man",
+      "meaning": "10,000"
+    },
+    {
+      "word": "すみません",
+      "romaji": "sumimasen",
+      "meaning": "уучлаарай"
+    },
+    {
+      "word": "～でございます",
+      "romaji": "~degozaimasu",
+      "meaning": "'です' ийн хүндэтгэл"
+    },
+    {
+      "word": "(～を)みせてください",
+      "romaji": "(~o) misete kudasai",
+      "meaning": "~г үзүүлнэ үү"
+    },
+    {
+      "word": "じゃ = では",
+      "romaji": "ja = dewa",
+      "meaning": "за"
+    },
+    {
+      "word": "(～を)ください",
+      "romaji": "(~o) kudasai",
+      "meaning": "~ийг өгөөч, авъя"
+    },
+    {
+      "word": "イタリア",
+      "romaji": "Itaria",
+      "meaning": "Итали, Italy"
+    },
+    {
+      "word": "スイス",
+      "romaji": "Suisu",
+      "meaning": "Швейцари, Switzerland"
+    }
+  ]
+}
