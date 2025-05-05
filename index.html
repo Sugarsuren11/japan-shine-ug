@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Япон-Монгол үгийн тоглоом</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <h1 class="title">Япон-Монгол үгийн тоглоом</h1>
+        
+        <div class="dictionary-controls">
+            <button id="export-dict-btn" class="dict-btn">Үгийн сан татах</button>
+            <label class="import-btn">
+                Үгийн сан импортлох
+                <input type="file" id="import-dict-input" accept=".json" style="display: none;">
+            </label>
+        </div>
+        
+        <!-- Translation direction buttons -->
+        <div class="direction-buttons">
+            <button id="jp-to-mn-btn" class="direction-btn active">Япон → Монгол</button>
+            <button id="mn-to-jp-btn" class="direction-btn">Монгол → Япон</button>
+            <button id="typing-mode-btn" class="direction-btn">Бичгээр хариулах</button>
+        </div>
+        
+        <!-- Script selection (only shown for Mongolian to Japanese) -->
+        <div class="script-selection" id="script-selection" style="display: none;">
+            <label class="script-option">
+                <input type="radio" name="script" value="hiragana" checked>
+                <span>Хирагана</span>
+            </label>
+            <label class="script-option">
+                <input type="radio" name="script" value="katakana">
+                <span>Катакана</span>
+            </label>
+            <label class="script-option">
+                <input type="radio" name="script" value="romaji">
+                <span>Ромажи</span>
+            </label>
+        </div>
+        
+        <!-- Word display card -->
+        <div class="word-card">
+            <h2 class="word" id="current-word"></h2>
+            <p class="reading" id="word-reading"></p>
+        </div>
+        
+        <!-- Answer input - only shown in typing mode -->
+        <div class="typing-section" id="typing-section" style="display: none;">
+            <input type="text" id="answer-input" placeholder="Япон орчуулга">
+            
+            <!-- Japanese keyboard -->
+            <div class="japanese-keyboard">
+                <h3>Япон үсгийн гарын хэв</h3>
+                
+                <!-- Keyboard tab selection -->
+                <div class="keyboard-tabs">
+                    <button id="hiragana-tab" class="keyboard-tab active">Хирагана</button>
+                    <button id="katakana-tab" class="keyboard-tab">Катакана</button>
+                </div>
+                
+                <!-- Hiragana keyboard -->
+                <div class="keyboard-layout" id="hiragana-keyboard">
+                    <div class="keyboard-row">
+                        <button class="char-btn">あ</button>
+                        <button class="char-btn">い</button>
+                        <button class="char-btn">う</button>
+                        <button class="char-btn">え</button>
+                        <button class="char-btn">お</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">か</button>
+                        <button class="char-btn">き</button>
+                        <button class="char-btn">く</button>
+                        <button class="char-btn">け</button>
+                        <button class="char-btn">こ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">さ</button>
+                        <button class="char-btn">し</button>
+                        <button class="char-btn">す</button>
+                        <button class="char-btn">せ</button>
+                        <button class="char-btn">そ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">た</button>
+                        <button class="char-btn">ち</button>
+                        <button class="char-btn">つ</button>
+                        <button class="char-btn">て</button>
+                        <button class="char-btn">と</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">な</button>
+                        <button class="char-btn">に</button>
+                        <button class="char-btn">ぬ</button>
+                        <button class="char-btn">ね</button>
+                        <button class="char-btn">の</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">は</button>
+                        <button class="char-btn">ひ</button>
+                        <button class="char-btn">ふ</button>
+                        <button class="char-btn">へ</button>
+                        <button class="char-btn">ほ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ま</button>
+                        <button class="char-btn">み</button>
+                        <button class="char-btn">む</button>
+                        <button class="char-btn">め</button>
+                        <button class="char-btn">も</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">や</button>
+                        <button class="char-btn">ゆ</button>
+                        <button class="char-btn">よ</button>
+                        <button class="char-btn">ら</button>
+                        <button class="char-btn">り</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">る</button>
+                        <button class="char-btn">れ</button>
+                        <button class="char-btn">ろ</button>
+                        <button class="char-btn">わ</button>
+                        <button class="char-btn">を</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ん</button>
+                        <button class="char-btn">ー</button>
+                        <button class="char-btn">　</button>
+                        <button class="char-btn">゛</button>
+                        <button class="char-btn">゜</button>
+                    </div>
+                </div>
+                
+                <!-- Katakana keyboard -->
+                <div class="keyboard-layout" id="katakana-keyboard" style="display: none;">
+                    <div class="keyboard-row">
+                        <button class="char-btn">ア</button>
+                        <button class="char-btn">イ</button>
+                        <button class="char-btn">ウ</button>
+                        <button class="char-btn">エ</button>
+                        <button class="char-btn">オ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">カ</button>
+                        <button class="char-btn">キ</button>
+                        <button class="char-btn">ク</button>
+                        <button class="char-btn">ケ</button>
+                        <button class="char-btn">コ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">サ</button>
+                        <button class="char-btn">シ</button>
+                        <button class="char-btn">ス</button>
+                        <button class="char-btn">セ</button>
+                        <button class="char-btn">ソ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">タ</button>
+                        <button class="char-btn">チ</button>
+                        <button class="char-btn">ツ</button>
+                        <button class="char-btn">テ</button>
+                        <button class="char-btn">ト</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ナ</button>
+                        <button class="char-btn">ニ</button>
+                        <button class="char-btn">ヌ</button>
+                        <button class="char-btn">ネ</button>
+                        <button class="char-btn">ノ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ハ</button>
+                        <button class="char-btn">ヒ</button>
+                        <button class="char-btn">フ</button>
+                        <button class="char-btn">ヘ</button>
+                        <button class="char-btn">ホ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">マ</button>
+                        <button class="char-btn">ミ</button>
+                        <button class="char-btn">ム</button>
+                        <button class="char-btn">メ</button>
+                        <button class="char-btn">モ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ヤ</button>
+                        <button class="char-btn">ユ</button>
+                        <button class="char-btn">ヨ</button>
+                        <button class="char-btn">ラ</button>
+                        <button class="char-btn">リ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ル</button>
+                        <button class="char-btn">レ</button>
+                        <button class="char-btn">ロ</button>
+                        <button class="char-btn">ワ</button>
+                        <button class="char-btn">ヲ</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="char-btn">ン</button>
+                        <button class="char-btn">ー</button>
+                        <button class="char-btn">　</button>
+                        <button class="char-btn">゛</button>
+                        <button class="char-btn">゜</button>
+                    </div>
+                </div>
+                
+                <div class="keyboard-controls">
+                    <button id="backspace-btn" class="control-btn">Backspace</button>
+                    <button id="check-answer-btn" class="check-btn">Хариулт шалгах</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Feedback message -->
+        <div id="feedback-message" class="feedback-message" style="display: none;"></div>
+        
+        <!-- Next word button -->
+        <div class="next-button" id="next-button-container" style="display: none;">
+            <button id="next-word-btn" class="next-btn">Дараагийн үг</button>
+        </div>
+        
+        <!-- Multiple choice options -->
+        <div class="multiple-choice" id="multiple-choice-container">
+            <div class="choices-grid" id="choices-grid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Set up import/export event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Export dictionary button
+            const exportBtn = document.getElementById('export-dict-btn');
+            if (exportBtn) {
+                exportBtn.addEventListener('click', function() {
+                    exportDictionary();
+                });
+            }
+            
+            // Import dictionary input
+            const importInput = document.getElementById('import-dict-input');
+            if (importInput) {
+                importInput.addEventListener('change', function(event) {
+                    importDictionary(event);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
