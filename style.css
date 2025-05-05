@@ -1,0 +1,314 @@
+/* Main Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f5ff;
+    padding: 20px;
+}
+
+.container {
+    background-color: #f0f8ff;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #2563eb;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Dictionary Controls */
+.dictionary-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.dict-btn, .import-btn {
+    padding: 8px 16px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.import-btn {
+    background-color: #3b82f6;
+    display: inline-block;
+}
+
+.dict-btn:hover, .import-btn:hover {
+    opacity: 0.9;
+}
+
+/* Direction Buttons */
+.direction-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.direction-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #e5e7eb;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.direction-btn:hover {
+    background-color: #d1d5db;
+}
+
+.direction-btn.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Script Selection */
+.script-selection {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.script-option {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.script-option span {
+    margin-left: 8px;
+}
+
+/* Word Card */
+.word-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.word {
+    font-size: 2.25rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.reading {
+    color: #6b7280;
+}
+
+/* Typing Section */
+.typing-section {
+    margin-bottom: 24px;
+}
+
+#answer-input {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.125rem;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+#answer-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+#answer-input.correct {
+    border-color: #10b981;
+}
+
+#answer-input.wrong {
+    border-color: #ef4444;
+}
+
+.japanese-keyboard {
+    background-color: #f3f4f6;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.japanese-keyboard h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.keyboard-tabs {
+    display: flex;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.keyboard-tab {
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.keyboard-tab.active {
+    background-color: #dbeafe;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.keyboard-layout {
+    margin-bottom: 16px;
+}
+
+.keyboard-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.char-btn {
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.char-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.keyboard-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.control-btn {
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    width: 25%;
+}
+
+.check-btn {
+    padding: 8px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 33%;
+}
+
+.check-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Feedback Message */
+.feedback-message {
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.feedback-message.correct {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.feedback-message.wrong {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.correct-answer {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Next Button */
+.next-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.next-btn {
+    padding: 12px 24px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.next-btn:hover {
+    background-color: #d1d5db;
+}
+
+/* Multiple Choice */
+.multiple-choice {
+    margin-top: 24px;
+}
+
+.choices-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.choice-btn {
+    padding: 16px;
+    text-align: center;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    font-size: 1.125rem;
+}
+
+.choice-btn:hover {
+    border-color: #9ca3af;
+}
+
+.choice-btn.correct {
+    border-color: #10b981;
+    background-color: #d1fae5;
+}
+
+.choice-btn.wrong {
+    border-color: #ef4444;
+    background-color: #fee2e2;
+}
+
+/* Disable hover on answered questions */
+.choice-btn[disabled] {
+    cursor: default;
+}
